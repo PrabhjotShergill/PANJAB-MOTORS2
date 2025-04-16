@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMarket - Professional Vehicle Marketplace</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">AutoMarket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Vehicles
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#private-cars">Private Cars</a></li>
+                            <li><a class="dropdown-item" href="#commercial-vehicles">Commercial Vehicles</a></li>
+                            <li><a class="dropdown-item" href="#agricultural-vehicles">Agricultural Vehicles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#featured">Featured</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light me-2" type="button">Sign In</button>
+                    <button class="btn btn-primary" type="button">Post Ad</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">Find Your Perfect Vehicle</h1>
+            <p class="lead mb-5">Browse thousands of listings for private cars, commercial vehicles, and agricultural machinery</p>
+            
+            <!-- Search Form -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="bg-white p-4 rounded">
+                        <ul class="nav nav-tabs vehicle-type-tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#private-tab">Private Cars</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#commercial-tab">Commercial</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#agricultural-tab">Agricultural</button>
+                            </li>
+                        </ul>
+                        
+                        <div class="tab-content p-3">
+                            <div class="tab-pane fade show active" id="private-tab">
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <select class="form-select">
+                                            <option selected>Brand</option>
+                                            <option>Toyota</option>
+                                            <option>Honda</option>
+                                            <option>BMW</option>
+                                            <option>Mercedes</option>
+                                            <option>Audi</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-select">
+                                            <option selected>Model</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-select">
+                                            <option selected>Year</option>
+                                            <option>2025</option>
+                                            <option>2024</option>
+                                            <option>2023</option>
+                                            <option>2022</option>
+                                            <option>2021</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group">
+                                            <span class="input-group-text">Price Range $</span>
+                                            <input type="number" class="form-control" placeholder="Min">
+                                            <input type="number" class="form-control" placeholder="Max">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="btn search-btn w-100">Search Vehicles</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade" id="commercial-tab">
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <select class="form-select">
+                                            <option selected>Type</option>
+                                            <option>Truck</option>
+                                            <option>Van</option>
+                                            <option>Bus</option>
+                                            <option>Lorry</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-select">
+                                            <option selected>Brand</option>
+                                            <option>Volvo</option>
+                                            <option>Mercedes</option>
+                                            <option>MAN</option>
+                                            <option>Scania</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-select">
+                                            <option selected>Year</option>
+                                            <option>2025</option>
+                                            <option>2024</option>
+                                            <option>2023</option>
+                                            <option>2022</option>
+                                            <option>2021</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group">
+                                            <span class="input-group-text">Price Range $</span>
+                                            <input type="number" class="form-control" placeholder="Min">
+                                            <input type="number" class="form-control" placeholder="Max">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="btn search-btn w-100">Search Vehicles</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade" id="agricultural-tab">
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <select class="form-select">
+                                            <option selected>Type</option>
+                                            <option>Tractor</option>
+                                            <option>Harvester</option>
+                                            <option>Cultivator</option>
+                                            <option>Sprayer</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-select">
+                                            <option selected>Brand</option>
+                                            <option>John Deere</option>
+                                            <option>New Holland</option>
+                                            <option>Massey Ferguson</option>
+                                            <option>Case IH</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-select">
+                                            <option selected>Year</option>
+                                            <option>2025</option>
+                                            <option>2024</option>
+                                            <option>2023</option>
+                                            <option>2022</option>
+                                            <option>2021</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group">
+                                            <span class="input-group-text">Price Range $</span>
+                                            <input type="number" class="form-control" placeholder="Min">
+                                            <input type="number" class="form-control" placeholder="Max">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="btn search-btn w-100">Search Vehicles</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+</body>
+</html>
